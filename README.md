@@ -9,17 +9,17 @@ Very often we face a case in our laboratory to ensure stable execution of old le
 
 ## Add repository
 
-You can find the list of all cran repos [here](https://cran.r-project.org/mirmon_report.html). I have Ubuntu Precise installed.
+You can find the list of all cran repos [here](https://cran.r-project.org/mirmon_report.html).
 
-Line below should be included in your `sources.list` in apt. 
-```
-deb http://stat.ethz.ch/CRAN/bin/linux/ubuntu precise/
-```
+
 
 *Please refer to [MANUAL UBUNTU](https://cran.r-project.org/bin/linux/ubuntu/README) and [MANUAL DEBIAN](https://cran.r-project.org/bin/linux/debian/) how to add CRAN repository.*
 
 
-My status: I have version `2.14.1-1` installed in the system.
+My status: I have version `2.14.1-1` installed in the system and Ubuntu Precise. In my case line below should be included in `sources.list` in apt. 
+```
+deb http://stat.ethz.ch/CRAN/bin/linux/ubuntu precise/
+```
 `$ sudo aptitude versions ^r-base-core$` shows following versions available 
 
 ```
