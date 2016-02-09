@@ -3,6 +3,8 @@ Multiple versions of R on Ubuntu/Debian
 
 Very often we face a case in our laboratory to ensure stable execution of old legacy code. Of course we can always rewrite and test the code with new versions of R, but it implies significant amount of work. I believe, that support of multiple versions of R is cooler.
 
+**The document provides easy way to setup multiple R environments on Ubuntu/Debian.**
+
 # CRAN Repository
 
 ## Add repository
