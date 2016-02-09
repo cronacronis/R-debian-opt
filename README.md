@@ -146,17 +146,21 @@ The paths can be checked with command **`.libPaths()`**
 
 There are environment variables affecting these locations `R_LIBS_USER` and `R_LIBS_SITE`(as a non-empty colon-separated list of library trees).
 
-```
-export R_LIBS_USER=/opt/R/3.1.3/usr/lib/R/site-library
-export R_LIBS_SITE=/opt/R/3.1.3/usr/lib/R/library
-```
 
 Let's get rid of `/usr/local/lib/R/site-library` `/usr/lib/R/site-library` `/usr/lib/R/library`
 
+**Add following lines in the beggining of `/opt/R/3.1.3/usr/bin/R`
+The beggining of the file will look like:
 ```
-vuser@ubuntu:/opt/R/3.1.3/usr/bin$ export R_LIBS_USER=/opt/R/3.1.3/usr/lib/R/site-library
-vuser@ubuntu:/opt/R/3.1.3/usr/bin$ export R_LIBS_SITE=/opt/R/3.1.3/usr/lib/R/library
+#!/bin/bash
+
+export R_LIBS_USER=/opt/R/3.1.3/usr/lib/R/site-library
+export R_LIBS_SITE=/opt/R/3.1.3/usr/lib/R/library
+
+
+# Shell wrapper for R executable.
 ```
+
 After we set parameters we can execute R and check `.libPaths()`:
 ```
 vuser@ubuntu:/opt/R/3.1.3/usr/bin$ ./R
