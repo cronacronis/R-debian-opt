@@ -149,7 +149,8 @@ There are environment variables affecting these locations `R_LIBS_USER` and `R_L
 
 Let's get rid of `/usr/local/lib/R/site-library` `/usr/lib/R/site-library` `/usr/lib/R/library`
 
-**Add following lines in the beggining of `/opt/R/3.1.3/usr/bin/R`
+**Add following lines in the beggining of `/opt/R/3.1.3/usr/bin/R`**
+
 The beggining of the file will look like:
 ```
 #!/bin/bash
